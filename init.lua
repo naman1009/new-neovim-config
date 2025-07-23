@@ -197,7 +197,7 @@ require('lazy').setup({
       require('nvim-tree').setup {}
     end,
   },
-  { 'akinsho/toggleterm.nvim', version = '*', config = true },
+  { 'akinsho/toggleterm.nvim', version = '*',       config = true },
   {
     'ray-x/lsp_signature.nvim',
     event = 'InsertEnter',
@@ -219,7 +219,7 @@ require('lazy').setup({
   'jiangmiao/auto-pairs',
   'tpope/vim-commentary',
   'tpope/vim-markdown',
-  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
+  { 'catppuccin/nvim',         name = 'catppuccin', priority = 1000 },
   'Mofiqul/vscode.nvim',
   'joshdick/onedark.vim',
   'habamax/vim-godot',
@@ -269,7 +269,7 @@ require('lazy').setup({
   -- after the plugin has been loaded:
   --  config = function() ... end
 
-  { -- Useful plugin to show you pending keybinds.
+  {                     -- Useful plugin to show you pending keybinds.
     'folke/which-key.nvim',
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     opts = {
@@ -312,7 +312,7 @@ require('lazy').setup({
 
       -- Document existing key chains
       spec = {
-        { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+        { '<leader>c', group = '[C]ode',     mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
         { '<leader>r', group = '[R]ename' },
         { '<leader>s', group = '[S]earch' },
@@ -352,7 +352,7 @@ require('lazy').setup({
       { 'nvim-telescope/telescope-ui-select.nvim' },
 
       -- Useful for getting pretty icons, but requires a Nerd Font.
-      { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
+      { 'nvim-tree/nvim-web-devicons',            enabled = vim.g.have_nerd_font },
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
@@ -449,7 +449,7 @@ require('lazy').setup({
       },
     },
   },
-  { 'Bilal2453/luvit-meta', lazy = true },
+  { 'Bilal2453/luvit-meta',    lazy = true },
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
@@ -461,7 +461,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP.
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Allows extra capabilities provided by nvim-cmp
       'hrsh7th/cmp-nvim-lsp',
@@ -961,7 +961,7 @@ require('lazy').setup({
 
 require('catppuccin').setup {
   flavour = 'mocha', -- latte, frappe, macchiato, mocha
-  background = { -- :h background
+  background = {     -- :h background
     light = 'latte',
     dark = 'mocha',
   },
@@ -974,7 +974,7 @@ require('catppuccin').setup {
     percentage = 0.15,
   },
   no_italic = false, -- Force no italic
-  no_bold = false, -- Force no bold
+  no_bold = false,   -- Force no bold
   styles = {
     comments = { 'italic' },
     conditionals = { 'italic' },
@@ -1005,8 +1005,8 @@ require('catppuccin').setup {
 require('nvim-ts-autotag').setup {
   opts = {
     -- Defaults
-    enable_close = true, -- Auto close tags
-    enable_rename = true, -- Auto rename pairs of tags
+    enable_close = true,           -- Auto close tags
+    enable_rename = true,          -- Auto rename pairs of tags
     enable_close_on_slash = false, -- Auto close on trailing </
   },
   -- Also override individual filetype configs, these take priority.
@@ -1037,17 +1037,17 @@ require('nvim-tree').setup {
 }
 -- Default options:
 require('kanagawa').setup {
-  compile = false, -- enable compiling the colorscheme
+  compile = false,  -- enable compiling the colorscheme
   undercurl = true, -- enable undercurls
   commentStyle = { italic = true },
   functionStyle = {},
   keywordStyle = { italic = true },
   statementStyle = { bold = true },
   typeStyle = {},
-  transparent = false, -- do not set background color
-  dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+  transparent = false,   -- do not set background color
+  dimInactive = false,   -- dim inactive window `:h hl-NormalNC`
   terminalColors = true, -- define vim.g.terminal_color_{0,17}
-  colors = { -- add/modify theme and palette colors
+  colors = {             -- add/modify theme and palette colors
 
     palette = {},
     theme = {
@@ -1066,8 +1066,8 @@ require('kanagawa').setup {
   overrides = function(colors) -- add/modify highlights
     return {}
   end,
-  theme = 'wave', -- Load "wave" theme
-  background = { -- map the value of 'background' option to a theme
+  theme = 'wave',  -- Load "wave" theme
+  background = {   -- map the value of 'background' option to a theme
     dark = 'wave', -- try "dragon" !
     light = 'lotus',
   },
